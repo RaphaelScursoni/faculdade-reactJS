@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/faculdade-reactJS/static/css/main.30e3afcb.chunk.css",
+    "main.js": "/faculdade-reactJS/static/js/main.de680b78.chunk.js",
+    "main.js.map": "/faculdade-reactJS/static/js/main.de680b78.chunk.js.map",
+    "runtime-main.js": "/faculdade-reactJS/static/js/runtime-main.c61d204c.js",
+    "runtime-main.js.map": "/faculdade-reactJS/static/js/runtime-main.c61d204c.js.map",
+    "static/js/2.9c1dce65.chunk.js": "/faculdade-reactJS/static/js/2.9c1dce65.chunk.js",
+    "static/js/2.9c1dce65.chunk.js.map": "/faculdade-reactJS/static/js/2.9c1dce65.chunk.js.map",
+    "index.html": "/faculdade-reactJS/index.html",
+    "static/css/main.30e3afcb.chunk.css.map": "/faculdade-reactJS/static/css/main.30e3afcb.chunk.css.map",
+    "static/js/2.9c1dce65.chunk.js.LICENSE.txt": "/faculdade-reactJS/static/js/2.9c1dce65.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c61d204c.js",
+    "static/js/2.9c1dce65.chunk.js",
+    "static/css/main.30e3afcb.chunk.css",
+    "static/js/main.de680b78.chunk.js"
+  ]
+}
