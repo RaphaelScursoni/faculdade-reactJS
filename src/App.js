@@ -10,6 +10,7 @@ import React, { useState, useEffect } from 'react'
       const [ starwars , setStarwars  ] = useState([])
 
       async function obterStarwars(){
+      setStarwars([])
       let url = 'http://api.tvmaze.com/search/shows?q=star%20wars'
       await fetch(url)
       .then(response => response.json())
@@ -19,22 +20,26 @@ import React, { useState, useEffect } from 'react'
       })
       .catch(function (error){
         console.error(`Houve um erro: ${error}`)
-      })
-    }
-    
-    const listastarwars = starwars.map((starwars) => 
+      });
+    } 
+
+
+     
+    const listastarwars = starwars.map((starwars) =>
     <tr key={starwars.show.id}>
       <td>{starwars.show.name}</td>
-      <p><a href={starwars.show.url}>{starwars.show.url}</a></p>
+      <td><a href={starwars.show.url}>{starwars.show.url}</a></td>
       <td>{starwars.show.language}</td>
       <td>{starwars.show.rating.average}</td>
       <td>{starwars.show.premiered}</td>
       <td>{starwars.show.type}</td>
-      <td><img src={starwars.show.image} alt={starwars.show.name} title={starwars.show.name}/></td>
+      {starwars.show.image && 
+      <td><img src={starwars.show.image["original"]} alt={starwars.show.name} title={starwars.show.name}/></td>}
     </tr> 
   )
 
   return(
+
   <div className="principal"> 
     <h1>
       Trilogia do Star Wars
@@ -50,12 +55,21 @@ import React, { useState, useEffect } from 'react'
           <th>Tipo dos filmes</th>
           <th>Foto da capa</th>
         </tr>
+        
       </thead>
+ 
       <tbody>
         {listastarwars}
       </tbody>
-    </table>
-    
+    </table> 
+    <button type='button' onClick={obterStarwars}>
+        Obter Filmes
+      </button>
+      {starwars.length > 0 &&
+        <button type='button' onClick={() => setStarwars([])}>
+          Limpar Resultados
+      </button> }
   </div>
-  )
-  }
+  
+  );
+}

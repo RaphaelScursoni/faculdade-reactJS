@@ -12,19 +12,19 @@ h1{
   margin-bottom: 15px;
 }
 
+a{
+  font-size: 16px;
+}
+
 td{
   padding: 5px;
   font-size: 21px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-p{
-  font-size: 14px;
-  margin-top: 25px;
-  font-family: 'Gill Sans';
-}
+
 th{
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -36,12 +36,32 @@ text-align: center;
 
 table{
   border-collapse: collapse;
-  width: 90%;
+  width: 95%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 img{
-  size: 100px;
+  width: 200px;
+  height: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 40px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: rgb(181, 248, 248);
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: rgb(42, 218, 218); 
 }
